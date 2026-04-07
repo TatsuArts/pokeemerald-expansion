@@ -851,6 +851,7 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(28, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(30, MOVE_HEX),
     LEVEL_UP_MOVE(32, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(36, MOVE_IMPRISON),
     LEVEL_UP_MOVE(40, MOVE_FIRE_SPIN),
@@ -861,6 +862,7 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_SPIN),
