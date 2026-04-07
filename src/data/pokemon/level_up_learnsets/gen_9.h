@@ -3413,7 +3413,7 @@ static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(10, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(15, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_AGILITY),
+    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(25, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(30, MOVE_FLAIL),
     LEVEL_UP_MOVE(35, MOVE_WATERFALL),
@@ -3424,6 +3424,7 @@ static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
@@ -3433,7 +3434,7 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(30, MOVE_FLAIL),
     LEVEL_UP_MOVE(37, MOVE_WATERFALL),
-    LEVEL_UP_MOVE(44, MOVE_SOAK),
+    LEVEL_UP_MOVE(44, MOVE_BRAVE_BIRD),
     LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
     LEVEL_UP_MOVE(58, MOVE_HORN_DRILL),
     LEVEL_UP_END
