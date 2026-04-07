@@ -2874,6 +2874,7 @@ static const struct LevelUpMove sExeggutorLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_WOOD_HAMMER),
     LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE( 55, MOVE_MIND_BLOWN),
     LEVEL_UP_END
 };
 
