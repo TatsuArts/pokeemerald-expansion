@@ -176,6 +176,70 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     /* You may add any custom species below this point based on the following structure: */
 
+        [SPECIES_MINIOR_STARTER] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 45,
+        .baseDefense   = 60,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = 64,      
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_STURDY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Minior"),
+        .cryId = CRY_MINIOR,
+        .natDexNum = NATIONAL_DEX_MINIOR_STARTER,
+        .categoryName = _("Stardust"),
+        .height = 3,
+        .weight = 3,
+        .description = COMPOUND_STRING(
+            "During its journey to Earth, a tiny meteorite\n"
+            "fuses with nearby stardust, creating this\n"
+            "rare Pokémon. It shimmers like uncut diamond\n"
+            "when exposed to light."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MiniorCore,
+        .frontPicSize = MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 16,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,
+        .enemyMonElevation = 17,
+        .backPic = gMonBackPic_MiniorCore,
+        .backPicSize = MON_COORDS_SIZE(56, 40),
+        .backPicYOffset = 15,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_MiniorCore,
+        .frontPicSizeFemale = MON_COORDS_SIZE(48, 40),
+        .backPicFemale = gMonBackPic_MiniorCore,
+        .backPicSizeFemale = MON_COORDS_SIZE(56, 40),
+        .paletteFemale = gMonPalette_MiniorCoreRed,
+        .shinyPaletteFemale = gMonShinyPalette_MiniorCore,
+        .iconSpriteFemale = gMonIcon_MiniorCoreRed,
+        .iconPalIndexFemale = 0,
+#endif //P_GENDER_DIFFERENCES
+        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
+        .palette = gMonPalette_MiniorCoreBlue,
+        .shinyPalette = gMonShinyPalette_MiniorCore,
+        .iconSprite = gMonIcon_MiniorCoreBlue,
+        .iconPalIndex = 0,
+        FOOTPRINT(Minior)
+        .levelUpLearnset = sMiniorLevelUpLearnset,
+        .teachableLearnset = sMiniorTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CARBINK}),
+    },
+
     /*
     [SPECIES_NONE] =
     {
