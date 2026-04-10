@@ -5000,23 +5000,23 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_CARBINK
     [SPECIES_CARBINK] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 150,
+        .baseHP        = 55,
+        .baseAttack    = 55,
+        .baseDefense   = 90,
         .baseSpeed     = 50,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 150,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
         .catchRate = 60,
         .expYield = 100,
         .evYield_Defense = 1,
         .evYield_SpDefense = 1,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_STURDY },
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_STURDY },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Carbink"),
         .cryId = CRY_CARBINK,
@@ -5071,6 +5071,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sCarbinkLevelUpLearnset,
         .teachableLearnset = sCarbinkTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIANCIE}),
     },
 #endif //P_FAMILY_CARBINK
 
@@ -7146,23 +7147,23 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_DIANCIE
     [SPECIES_DIANCIE] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 100,
-        .baseDefense   = 150,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 150,
+        .baseHP        = 60,
+        .baseAttack    = 80,
+        .baseDefense   = 120,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
-        .catchRate = 3,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_NONE },
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Diancie"),
         .cryId = CRY_DIANCIE,
@@ -7171,7 +7172,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 7,
         .weight = 88,
         .description = COMPOUND_STRING(
-            "A sudden transformation of Carbink,\n"
+            "A fully grown and evolved Carbink,\n"
             "its pink, glimmering body is said to be\n"
             "the loveliest sight in the whole world.\n"
             "It creates diamonds between its hands."),
@@ -7208,8 +7209,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Diancie,
             gShinyOverworldPalette_Diancie
         )
-        .isMythical = TRUE,
-        .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDiancieLevelUpLearnset,
         .teachableLearnset = sDiancieTeachableLearnset,
@@ -7220,23 +7219,23 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_DIANCIE_MEGA] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 160,
-        .baseDefense   = 110,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 160,
-        .baseSpDefense = 110,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 135,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 350 : 315,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_FAIRY_AURA, ABILITY_FAIRY_AURA, ABILITY_FAIRY_AURA },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Diancie"),
     #if P_MODIFIED_MEGA_CRIES
@@ -7284,9 +7283,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gShinyOverworldPalette_DiancieMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
-        .isMythical = TRUE,
         .isMegaEvolution = TRUE,
-        .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDiancieLevelUpLearnset,
         .teachableLearnset = sDiancieTeachableLearnset,

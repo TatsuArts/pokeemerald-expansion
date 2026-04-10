@@ -202,10 +202,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "During its journey to Earth, a tiny meteorite\n"
-            "fuses with nearby stardust, creating this\n"
-            "rare Pokémon. It shimmers like uncut diamond\n"
-            "when exposed to light."),
+            "During its journey to Earth, a tiny\n" 
+            "meteorite fuses with nearby stardust,\n" 
+            "creating this rare Pokémon. It shimmers\n" 
+            "like uncut diamond when exposed to light."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
